@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <EditText
+        android:id="@+id/SignUpActivityNameText"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/SignUpACtivityPasswordText"
+        android:layout_width="242dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Password"
+
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/SignUpActivityNameText"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpActivityNameText" />
+
+    <Button
+        android:id="@+id/SignInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:onClick="SignIn"
+        android:text="SIGN IN"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SignUpButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/SignUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="68dp"
+        android:onClick="SignUp"
+
+        android:text="SIGN UP"
+        app:layout_constraintStart_toEndOf="@+id/SignInButton"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpACtivityPasswordText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
